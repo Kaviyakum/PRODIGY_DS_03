@@ -27,11 +27,12 @@ Code Example:
 
 from textblob import TextBlob
 
+
 def analyze_sentiment(text):
 
-    analysis = TextBlob(text)
+ analysis = TextBlob(text)
     
-    return analysis.sentiment.polarity
+ return analysis.sentiment.polarity
     
 
 **# Applying sentiment analysis to the dataset**

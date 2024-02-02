@@ -23,14 +23,19 @@ The sentiment analysis is performed using the polarity of the tweet text. Polari
 Code Example:
 
 
-# Sample code for sentiment analysis using TextBlob
+**# Sample code for sentiment analysis using TextBlob**
+
 from textblob import TextBlob
 
 def analyze_sentiment(text):
-    analysis = TextBlob(text)
-    return analysis.sentiment.polarity
 
-# Applying sentiment analysis to the dataset
+    analysis = TextBlob(text)
+    
+    return analysis.sentiment.polarity
+    
+
+**# Applying sentiment analysis to the dataset**
+
 tweets['polarity'] = tweets['text'].apply(analyze_sentiment)
 
 

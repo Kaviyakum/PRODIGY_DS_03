@@ -26,13 +26,18 @@ Code Example:
 
 from textblob import TextBlob
 
+
 def analyze_sentiment(text):
+
     analysis = TextBlob(text)
+    
     return analysis.sentiment.polarity
 
 **# Applying sentiment analysis to the dataset**
 
 tweets['polarity'] = tweets['text'].apply(analyze_sentiment)
 
+
 Visualizations
+
 The analysis results are visualized using charts and graphs, providing a comprehensive view of sentiment patterns over time and across different topics related to vaccinations.
